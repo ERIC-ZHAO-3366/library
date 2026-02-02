@@ -1,3 +1,8 @@
+// 配置常量：地图默认中心、打开定位时显示的地址、导航默认城市
+const DEFAULT_CENTER = { latitude: 39.9042, longitude: 116.4074 };
+const OPEN_LOCATION_ADDRESS = '北京国际电影节参展影院';
+const NAVIGATION_CITY = '北京';
+
 const filmData = [
   {
     "city": "Beijing",
@@ -17770,4 +17775,11 @@ const docList = [
   }
 ];
 
-module.exports = { filmData: filmData, docList: docList, adminNotice: typeof adminNotice !== 'undefined' ? adminNotice : '' };
+module.exports = {
+  filmData: filmData,
+  docList: docList,
+  adminNotice: typeof adminNotice !== 'undefined' ? adminNotice : '',
+  DEFAULT_CENTER,
+  OPEN_LOCATION_ADDRESS,
+  NAVIGATION_CITY
+};
